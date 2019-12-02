@@ -31,6 +31,7 @@ public class RedisChannelQueue {
       // 接受消息
       @Override
       public void message(String channel, String message) {
+        System.out.println(Thread.currentThread().getName());
         System.out.println("a" + channel + message);
       }
 
@@ -43,6 +44,7 @@ public class RedisChannelQueue {
       // 订阅 count 订阅数量
       @Override
       public void subscribed(String channel, long count) {
+        System.out.println(Thread.currentThread().getName());
         System.out.println("c" + channel + count);
       }
 
@@ -82,6 +84,8 @@ public class RedisChannelQueue {
     RedisClient redisClient = RedisClient.create("redis://47.99.73.15:6379/0");
     RedisChannelQueue redisChannelQueue = new RedisChannelQueue(redisClient, "channel");
     redisChannelQueue.sub();
+    System.out.println(Thread.currentThread().getName());
     redisChannelQueue.pub("a");
+    redisChannelQueue.pub("b");
   }
 }
