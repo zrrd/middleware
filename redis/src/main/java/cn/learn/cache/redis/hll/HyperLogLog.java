@@ -1,4 +1,4 @@
-package cn.learn.redis.hll;
+package cn.learn.cache.redis.hll;
 
 import io.lettuce.core.RedisClient;
 import io.lettuce.core.api.StatefulRedisConnection;

@@ -1,4 +1,4 @@
-package cn.learn.redis.queue;
+package cn.learn.cache.redis.queue;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;

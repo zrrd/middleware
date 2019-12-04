@@ -1,4 +1,4 @@
-package cn.learn.redis;
+package cn.learn.cache.redis;
 
 import com.google.common.collect.ImmutableMap;
 import io.lettuce.core.KeyValue;

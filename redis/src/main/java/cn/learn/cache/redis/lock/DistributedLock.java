@@ -1,4 +1,4 @@
-package cn.learn.redis.lock;
+package cn.learn.cache.redis.lock;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;

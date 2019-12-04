@@ -1,4 +1,4 @@
-package cn.learn.redis.bitmap;
+package cn.learn.cache.redis.bitmap;
 
 import io.lettuce.core.RedisClient;
 import io.lettuce.core.api.StatefulRedisConnection;

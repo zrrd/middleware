@@ -1,4 +1,4 @@
-package cn.learn.redis.lock;
+package cn.learn.cache.redis.lock;
 
 import io.lettuce.core.RedisClient;
 import java.time.Duration;
