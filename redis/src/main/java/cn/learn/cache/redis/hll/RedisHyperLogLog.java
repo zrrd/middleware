@@ -8,7 +8,7 @@ import io.lettuce.core.api.sync.RedisCommands;
  * @author shaoyijiong
  * @date 2019/11/29
  */
-public class HyperLogLog {
+public class RedisHyperLogLog {
 
   private RedisClient redisClient;
   private StatefulRedisConnection<String, String> connection;
@@ -32,7 +32,7 @@ public class HyperLogLog {
   }
 
   private static void a() {
-    HyperLogLog hyperLogLog = new HyperLogLog();
+    RedisHyperLogLog hyperLogLog = new RedisHyperLogLog();
     hyperLogLog.init();
     final RedisCommands<String, String> syncCommands = hyperLogLog.syncCommands;
     // 100

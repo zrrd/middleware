@@ -17,7 +17,7 @@ import org.apache.commons.lang3.time.DateUtils;
  * @author shaoyijiong
  * @date 2019/11/27
  */
-public class BitTest {
+public class RedisBitmap {
 
 
   private RedisClient redisClient;
@@ -45,7 +45,7 @@ public class BitTest {
    * 零存整取
    */
   private static void a() {
-    BitTest bitTest = new BitTest();
+    RedisBitmap bitTest = new RedisBitmap();
     bitTest.init();
     final RedisCommands<String, String> syncCommands = bitTest.syncCommands;
 
@@ -80,7 +80,7 @@ public class BitTest {
    * 零存零取
    */
   private static void b() {
-    BitTest bitTest = new BitTest();
+    RedisBitmap bitTest = new RedisBitmap();
     bitTest.init();
     final RedisCommands<String, String> syncCommands = bitTest.syncCommands;
     // 存
@@ -99,7 +99,7 @@ public class BitTest {
    * 整村零取
    */
   private static void c() {
-    BitTest bitTest = new BitTest();
+    RedisBitmap bitTest = new RedisBitmap();
     bitTest.init();
     final RedisCommands<String, String> syncCommands = bitTest.syncCommands;
     // 存
@@ -116,7 +116,7 @@ public class BitTest {
    * 统计与查找
    */
   private static void d() {
-    BitTest bitTest = new BitTest();
+    RedisBitmap bitTest = new RedisBitmap();
     bitTest.init();
     final RedisCommands<String, String> syncCommands = bitTest.syncCommands;
     // 存
@@ -150,7 +150,7 @@ public class BitTest {
    * 统计用户签到
    */
   private static void f() {
-    BitTest bitTest = new BitTest();
+    RedisBitmap bitTest = new RedisBitmap();
     bitTest.init();
     final RedisCommands<String, String> syncCommands = bitTest.syncCommands;
     String uid = "1";
