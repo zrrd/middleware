@@ -6,3 +6,4 @@
 > * bitmap 位图
 > * hll HyperLogLog 在允许一定的误差下,统计不重复数据
 > * bloom 布隆过滤器 判断key是否存在
+> * limit 限流 1.滑动窗口限流 2.令牌桶限流

@@ -285,6 +285,10 @@ public class RedisTest {
     syncCommands.zrem("pl", "java");
     List<String> v10 = syncCommands.zrange("pl", 0, -1);
     log.info(v10.toString());
+    // 移除分数内的数据
+    syncCommands.zremrangebyscore("pl", Range.create(1.0, 2.0));
+    // 一次top1 与 top2的数据
+    syncCommands.zremrangebyrank("pl", 0, 1);
     close();
   }
 }
