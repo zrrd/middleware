@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * redis geo 测试
+ * redis geo 测试 实现附近的人
  *
  * @author shaoyijiong
  * @date 2019/12/9
