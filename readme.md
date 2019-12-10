@@ -9,3 +9,5 @@
 > * limit 限流 1.滑动窗口限流 2.令牌桶限流 3.漏桶限流
 > * geo 地图函数 实现"附件的人"
 > * scan 解决keys 缺点引入scan
+> * pipeline redis管道 批量传输命令到redis服务端
+> * transactions redis 事务
