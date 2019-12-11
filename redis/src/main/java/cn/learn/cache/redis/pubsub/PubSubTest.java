@@ -127,7 +127,7 @@ public class PubSubTest {
     pubSubTest.close();
   }
 
-  public static void main(String[] args) throws InterruptedException {
+  public static void main(String[] args) {
     new Thread(() -> {
       try {
         b();
