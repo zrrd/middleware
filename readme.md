@@ -11,3 +11,4 @@
 > * scan 解决keys 缺点引入scan
 > * pipeline redis管道 批量传输命令到redis服务端
 > * transactions redis 事务
+> * pubsub  消息订阅
